@@ -3,171 +3,357 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – Battery Alarm Clock</title>
-<meta name="description" content="Privacy Policy for the Battery Alarm Clock Android app.">
+<title>Privacy Policy - Battery Alarm Clock</title>
+<meta name="description" content="Privacy Policy for Battery Alarm Clock: what we collect (almost nothing), ads, purchases, permissions and your choices.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#004b42">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%2300a392%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23004b42%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url%28%23g%29%22/%3E%3Crect%20x%3D%2213%22%20y%3D%2222%22%20width%3D%2234%22%20height%3D%2222%22%20rx%3D%225%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%223.5%22/%3E%3Crect%20x%3D%2249%22%20y%3D%2229%22%20width%3D%224%22%20height%3D%228%22%20rx%3D%221.5%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M31%2025.5%2024.5%2034h5.5l-2%207%208-9.5h-5.5z%22%20fill%3D%22%23ffc107%22/%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2215%22%20r%3D%225%22%20fill%3D%22%23ffc107%22/%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2215%22%20r%3D%225%22%20fill%3D%22%23ffc107%22/%3E%3C/svg%3E" type="image/svg+xml">
 <style>
+/* Battery Alarm Clock — legal page. Rang / spacing badalni ho to sirf :root ke variables badlo. */
+
+:root {
+  --primary: #007a6e;
+  --primary-dark: #004b42;
+  --accent: #ffc107;
+  --bg: #eef3f2;
+  --surface: #ffffff;
+  --text: #111e1c;
+  --muted: #4a6360;
+  --line: #d3dedc;
+  --soft: #e6f2f0;
+  --link: #006b60;
+  --warn-bg: #fff6dc;
+  --warn-line: #f0c75a;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,60,52,.08);
+  --max: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg: #f6f8f8; --card: #ffffff; --text: #1c2524; --muted: #5a6866;
-    --accent: #0a6b62; --line: #dfe6e5;
+    --primary: #26a69a;
+    --primary-dark: #0f2f2b;
+    --bg: #101514;
+    --surface: #1a2220;
+    --text: #eaf0ef;
+    --muted: #a9bdba;
+    --line: #2f3d3a;
+    --soft: #20312e;
+    --link: #4fd1c5;
+    --warn-bg: #3a3320;
+    --warn-line: #7a6422;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #101616; --card: #182020; --text: #e6eeed; --muted: #9db0ae;
-      --accent: #4fd1c1; --line: #2a3635;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  header { background: var(--accent); color: #fff; padding: 28px 20px; }
-  header .wrap { max-width: 760px; margin: 0 auto; }
-  header h1 { margin: 0 0 4px; font-size: 1.6rem; }
-  header p { margin: 0; opacity: .9; font-size: .95rem; }
-  main { max-width: 760px; margin: 0 auto; padding: 20px; }
-  section {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 12px; padding: 18px 20px; margin: 0 0 16px;
-  }
-  h2 { margin: 0 0 8px; font-size: 1.15rem; color: var(--accent); }
-  h3 { margin: 14px 0 4px; font-size: 1rem; }
-  p { margin: 8px 0; }
-  ul { margin: 8px 0; padding-left: 22px; }
-  li { margin: 4px 0; }
-  a { color: var(--accent); }
-  .muted { color: var(--muted); font-size: .9rem; }
-  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: .95rem; }
-  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { color: var(--muted); font-weight: 600; }
-  footer { max-width: 760px; margin: 0 auto; padding: 0 20px 32px; text-align: center; }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow-wrap: break-word;
+  font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a { color: var(--link); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 14px; }
+@media (min-width: 700px) { .wrap { padding: 0 20px; } }
+
+.skip {
+  position: absolute; left: -9999px; top: 8px; z-index: 100;
+  background: var(--accent); color: #111; padding: 8px 14px; border-radius: 8px; font-weight: 600;
+}
+.skip:focus { left: 12px; }
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(180deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  padding: 40px 0 64px;
+  border-radius: 0 0 36px 36px;
+}
+.hero .eyebrow {
+  display: inline-block; margin: 0 0 10px; padding: 4px 12px; border-radius: 999px;
+  background: rgba(255,255,255,.16); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.hero h1 { margin: 0 0 8px; font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.15; letter-spacing: -.01em; }
+.hero p { margin: 0; color: #d6eeea; max-width: 640px; }
+.hero .meta { margin-top: 14px; font-size: .9rem; color: #bfe3dd; }
+
+/* ── Page layout: TOC + document ── */
+.layout > * { min-width: 0; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: -36px; padding-bottom: 56px; }
+@media (min-width: 900px) {
+  .layout { grid-template-columns: 250px minmax(0, 1fr); gap: 28px; align-items: start; }
+}
+
+.toc {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 6px 16px;
+}
+/* sticky aside par lagta hai (details par nahi), warna scroll ke saath nahi chipakta */
+@media (min-width: 900px) { .layout > aside { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; } }
+.toc summary { cursor: pointer; padding: 10px 0; font-weight: 700; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "▾"; color: var(--muted); }
+.toc[open] summary::after { content: "▴"; }
+.toc ol { margin: 0 0 10px; padding: 0; list-style: none; counter-reset: toc; }
+.toc li { counter-increment: toc; }
+.toc li a {
+  display: flex; gap: 8px; padding: 6px 8px; margin: 0 -8px; border-radius: 8px;
+  color: var(--muted); text-decoration: none; font-size: .92rem; line-height: 1.4;
+}
+.toc li a::before { content: counter(toc) "."; min-width: 1.5em; color: var(--primary); font-weight: 700; }
+.toc li a:hover { background: var(--soft); color: var(--text); }
+
+/* ── Document ── */
+.doc {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 8px 16px 24px;
+  counter-reset: sec;
+}
+@media (min-width: 700px) { .doc { padding: 12px 38px 40px; } }
+
+.doc section { padding-top: 22px; }
+.doc h2 {
+  counter-increment: sec; display: flex; gap: 12px; align-items: baseline;
+  margin: 0 0 10px; font-size: 1.25rem; line-height: 1.3; letter-spacing: -.005em;
+}
+.doc h2::before {
+  content: counter(sec); flex: none; min-width: 30px; height: 30px; border-radius: 9px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--soft); color: var(--primary); font-size: .9rem; font-weight: 800;
+}
+.doc h3 { margin: 18px 0 6px; font-size: 1.02rem; }
+.doc p { margin: 0 0 12px; }
+.doc ul, .doc ol { margin: 0 0 14px; padding-left: 1.3em; }
+.doc li { margin: 5px 0; }
+.doc li::marker { color: var(--primary); }
+.doc section + section { border-top: 1px solid var(--line); margin-top: 22px; }
+
+code, .perm {
+  font: .8em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--soft); padding: 2px 6px; border-radius: 6px; overflow-wrap: anywhere;
+  display: inline-block; margin: 2px 2px 2px 0;
+}
+
+/* ── Callouts ── */
+.callout {
+  margin: 4px 0 16px; padding: 14px 16px; border-radius: 12px;
+  background: var(--soft); border: 1px solid var(--line); border-left: 5px solid var(--primary);
+}
+.callout > :last-child { margin-bottom: 0; }
+.callout strong.title { display: block; margin-bottom: 4px; }
+.callout.warn { background: var(--warn-bg); border-color: var(--warn-line); border-left-color: var(--accent); }
+.callout ul { margin-bottom: 0; }
+
+/* ── Tables ── */
+.table-wrap { overflow-x: auto; margin: 6px 0 16px; border: 1px solid var(--line); border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+@media (min-width: 700px) { table { font-size: .93rem; } }
+th, td { text-align: left; padding: 10px 10px; vertical-align: top; border-bottom: 1px solid var(--line); }
+th { background: var(--soft); font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+
+/* ── Contact card ── */
+.contact {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+  margin-top: 8px; padding: 16px 18px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: #fff;
+}
+.contact a { color: #fff; font-weight: 700; overflow-wrap: anywhere; }
+.contact p { margin: 0; }
+.btn {
+  display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--accent); color: #1b1b1b;
+  font-weight: 700; text-decoration: none;
+}
+.btn:hover { filter: brightness(.95); }
+
+/* ── Footer: sirf doosre page ka ek link ── */
+.site-footer { padding: 8px 0 44px; text-align: center; }
+.site-footer a {
+  display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 700; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); color: var(--link);
+}
+.site-footer a:hover { border-color: var(--primary); }
+
+/* ── Print ── */
+@media print {
+  .toc, .site-footer, .skip { display: none; }
+  .hero { background: none; color: #000; padding: 0 0 12px; border-radius: 0; }
+  .hero p, .hero .meta { color: #333; }
+  .layout { margin-top: 0; display: block; }
+  .doc { border: 0; box-shadow: none; padding: 0; }
+  body { background: #fff; color: #000; }
+}
+
 </style>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 
-<header>
+<section class="hero">
   <div class="wrap">
+    <span class="eyebrow">Legal</span>
     <h1>Privacy Policy</h1>
-    <p>Battery Alarm Clock</p>
+    <p>How Battery Alarm Clock handles your information. Short, plain and honest.</p>
   </div>
-</header>
-
-<main>
-
-<section>
-  <h2>1. Introduction</h2>
-  <p>This Privacy Policy explains how <strong>Developer</strong> ("we", "us") handles information when you use the
-  <strong>Battery Alarm Clock</strong> Android app ("the app"). The app lets you set battery-percentage alarms and time alarms.</p>
-  <p>In short: <strong>we do not require an account, we do not run our own servers, and we do not collect your name, email,
-  phone number or location.</strong> Your alarms stay on your device.</p>
 </section>
 
-<section>
-  <h2>2. Information stored on your device</h2>
-  <p>The following stays on your device and is never uploaded by us:</p>
-  <ul>
-    <li><strong>Alarm settings:</strong> the alarms you create (battery percentages, times, modes, repeat options), your
-    app settings and theme.</li>
-    <li><strong>Audio you choose:</strong> if you pick a custom alarm sound with the system file picker, a copy is kept in the
-    app's private storage so the alarm can play it. We do not read any other files.</li>
-    <li><strong>VIP status:</strong> if you purchase VIP, a small token confirming your purchase is stored on the device,
-    encrypted with the Android Keystore.</li>
-  </ul>
-</section>
+<div class="wrap layout">
+  <aside>
+    <details class="toc" id="toc">
+      <summary>On this page</summary>
+      <nav aria-label="Table of contents">
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#not-collected">Information we do not collect</a></li>
+          <li><a href="#on-device">Information stored on your device</a></li>
+          <li><a href="#ads">Ads and your consent choices</a></li>
+          <li><a href="#purchases">Purchases (VIP)</a></li>
+          <li><a href="#permissions">Permissions the app uses</a></li>
+          <li><a href="#feedback">Reporting a problem or sending feedback</a></li>
+          <li><a href="#third-party">Third-party services</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#security">Security and retention</a></li>
+          <li><a href="#rights">Your choices and rights</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </nav>
+    </details>
+  </aside>
 
-<section>
-  <h2>3. Third-party services</h2>
+  <main class="doc" id="content">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>This Privacy Policy explains what information <strong>Battery Alarm Clock</strong> (&ldquo;the app&rdquo;) handles and your choices. The app is published by Lifestyle Coder (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
+        <div class="callout">
+          <strong class="title">The short version</strong>
+          <ul>
+            <li>No account, sign-up or login. We do not run a server.</li>
+            <li>Your alarms and settings stay on your device.</li>
+            <li>The free version shows ads from Google AdMob. VIP removes them.</li>
+            <li>Purchases are handled by Google Play &mdash; we never see your payment details.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="not-collected">
+        <h2>Information we do not collect</h2>
+        <p>We do not collect, store or sell any of the following:</p>
+        <ul>
+          <li>Your name, email address, phone number or contacts</li>
+          <li>Your location or the places you visit</li>
+          <li>Your photos, files, messages or call history</li>
+          <li>Details of the alarms you set (they never leave your phone)</li>
+        </ul>
+      </section>
+      <section id="on-device">
+        <h2>Information stored on your device</h2>
+        <p>The app keeps the following only on your device:</p>
+        <ul>
+          <li>Your time alarms and battery-level alarms, and their options</li>
+          <li>Your ringtone, vibration, theme and display choices</li>
+          <li>Your VIP status. It is stored encrypted using the Android Keystore and protected against tampering.</li>
+        </ul>
+        <p>Uninstalling the app removes this data from your device.</p>
+      </section>
+      <section id="ads">
+        <h2>Ads and your consent choices</h2>
+        <p>The free version uses <strong>Google AdMob</strong>. Google and its partners may collect and use information such as your device&rsquo;s advertising ID, IP address, device and app information, and how you interact with ads, to show and measure ads and to prevent fraud.</p>
+        <p><strong>Consent.</strong> In the European Economic Area, the United Kingdom and other regions where the law requires it, the app shows Google&rsquo;s consent form (Google User Messaging Platform) before any ads are requested. You can review or change your choice any time from the app menu &rarr; <em>Ad privacy settings</em> (shown in regions where it applies).</p>
+        <p><strong>Other controls.</strong> You can reset your advertising ID or opt out of ad personalisation in your device settings (Settings &rarr; Google &rarr; Ads). Buying VIP removes ads from the app.</p>
+      </section>
+      <section id="purchases">
+        <h2>Purchases (VIP)</h2>
+        <p>VIP plans (monthly, yearly and lifetime) are bought through <strong>Google Play Billing</strong>. Google processes the payment under its own terms and privacy policy.</p>
+        <p>The app receives only the purchase information needed to unlock VIP &mdash; such as the product and a signed purchase receipt &mdash; and checks it on your device. When you are online, the app periodically re-checks your purchase with Google Play so that VIP stays correct after renewals, cancellations or refunds. We never receive your card or payment details.</p>
+      </section>
+      <section id="permissions">
+        <h2>Permissions the app uses</h2>
+        <p>The app asks only for permissions that its alarm features need:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Permission</th><th>Why we need it</th></tr></thead>
+            <tbody>
+              <tr><td>Notifications<br><span class="perm">POST_NOTIFICATIONS</span></td><td>To show the alarm notification and its Stop button.</td></tr>
+              <tr><td>Exact alarms<br><span class="perm">SCHEDULE_EXACT_ALARM</span> <span class="perm">USE_EXACT_ALARM</span></td><td>To ring time alarms at the exact minute you set.</td></tr>
+              <tr><td>Full-screen alerts, wake and unlock<br><span class="perm">USE_FULL_SCREEN_INTENT</span> <span class="perm">TURN_SCREEN_ON</span> <span class="perm">DISABLE_KEYGUARD</span> <span class="perm">WAKE_LOCK</span></td><td>To turn the screen on and show the alarm over the lock screen when it rings.</td></tr>
+              <tr><td>Foreground service<br><span class="perm">FOREGROUND_SERVICE</span> <span class="perm">FOREGROUND_SERVICE_SYSTEM_EXEMPTED</span></td><td>To keep the alarm running reliably while it rings and to watch the battery level for battery alarms.</td></tr>
+              <tr><td>Run at startup<br><span class="perm">RECEIVE_BOOT_COMPLETED</span></td><td>To restore your alarms after the phone restarts.</td></tr>
+              <tr><td>Battery optimisation<br><span class="perm">REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</span></td><td>So the system does not delay or stop your alarms to save power.</td></tr>
+              <tr><td>Vibrate<br><span class="perm">VIBRATE</span></td><td>For vibration when an alarm rings.</td></tr>
+              <tr><td>Internet and network state<br><span class="perm">INTERNET</span> <span class="perm">ACCESS_NETWORK_STATE</span></td><td>To load ads and to connect to Google Play for purchases.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="feedback">
+        <h2>Reporting a problem or sending feedback</h2>
+        <p>If you use <em>Report a problem / Feedback</em>, the app opens your email app with a message addressed to us. We receive only what you send. If you tick <em>Include device &amp; app info</em>, the email also contains the app version, Android version, device model and the status of alarm-related permissions. It contains no name, contact list or location. You can edit or delete anything before sending. We use it only to understand and fix the problem.</p>
+      </section>
+      <section id="third-party">
+        <h2>Third-party services</h2>
+        <p>The app uses the following Google services. Their own privacy policies apply to the data they handle.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Service</th><th>Used for</th><th>Policy</th></tr></thead>
+            <tbody>
+              <tr><td>Google AdMob</td><td>Showing ads in the free version</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
+              <tr><td>Google User Messaging Platform</td><td>Asking for ad consent where required</td><td><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses data</a></td></tr>
+              <tr><td>Google Play Billing</td><td>VIP purchases and subscriptions</td><td><a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="children">
+        <h2>Children</h2>
+        <p>The app is not directed to children, and we do not knowingly collect personal information from children.</p>
+      </section>
+      <section id="security">
+        <h2>Security and retention</h2>
+        <p>Your data stays on your device. VIP status is encrypted and tamper-protected. Because we do not hold your data on a server, there is nothing for us to retain, export or delete on our side, apart from emails you send us, which we keep only as long as needed to respond.</p>
+      </section>
+      <section id="rights">
+        <h2>Your choices and rights</h2>
+        <ul>
+          <li><strong>Ads:</strong> change consent in <em>Ad privacy settings</em> or reset your advertising ID in device settings.</li>
+          <li><strong>Your data:</strong> clear the app&rsquo;s data or uninstall the app to remove everything stored on your device.</li>
+          <li><strong>Requests:</strong> if you believe we hold information about you (for example, an email you sent), contact us and we will help you access or delete it, as the law of your region requires.</li>
+        </ul>
+      </section>
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy from time to time. The latest version is always available inside the app (menu &rarr; Privacy Policy) and on this page, with the &ldquo;Last updated&rdquo; date at the top.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact us</h2>
+        <p>For any privacy question or request:</p>
+        <div class="contact">
+          <p>Questions, requests or feedback?<br><a href="mailto:supportoflifestyle@gmail.com">supportoflifestyle@gmail.com</a></p>
+          <a class="btn" href="mailto:supportoflifestyle@gmail.com">Email us</a>
+        </div>
+      </section>
+  </main>
+</div>
+<script>
+  /* Bade screen par contents list khuli rahe (JS band ho to bhi page poora padha ja sakta hai). */
+  if (window.matchMedia && window.matchMedia("(min-width: 900px)").matches) {
+    document.getElementById("toc").open = true;
+  }
+</script>
 
-  <h3>Google AdMob (advertising &ndash; free version only)</h3>
-  <p>The free version shows ads through Google AdMob. AdMob may collect and use information such as your device's
-  advertising ID, IP address, device and app information, and your interactions with ads, to deliver and measure ads and
-  to prevent fraud. Learn more: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data when you use our partners' apps</a>
-  and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
-  <p>If you are in the European Economic Area or the United Kingdom, we use Google's User Messaging Platform to ask for
-  your consent before ads are requested. You can review or change your choice at any time from the app's menu
-  (<em>Privacy settings</em>), when it is shown. You can also reset or disable your advertising ID in your Android
-  settings.</p>
-  <p>If you have an active VIP purchase, the app does not initialise the ads service or show ads.</p>
-
-  <h3>Google Play Billing (VIP purchases)</h3>
-  <p>Payments for VIP are handled entirely by Google Play. We do not receive or store your card or payment details. The
-  app only receives the status of your purchase (for example, that a subscription or lifetime purchase is active) so it
-  can unlock VIP features. Manage or cancel subscriptions in the Google Play Store under <em>Payments &amp; subscriptions</em>.</p>
-
-  <h3>Report &amp; Feedback</h3>
-  <p>If you use <em>Report &amp; Feedback</em>, the app opens your email app with a pre-filled message. Nothing is sent
-  unless you press send in your email app. The message contains the problem type and the description you wrote, and,
-  if you leave the option ticked, technical details such as app version, Android version, device model, language,
-  battery-optimisation status and whether VIP is active. We use this only to understand and fix the issue you report.</p>
-</section>
-
-<section>
-  <h2>4. Permissions the app uses</h2>
-  <table>
-    <tr><th>Permission</th><th>Why it is needed</th></tr>
-    <tr><td>Notifications</td><td>To show the alarm notification when an alarm rings.</td></tr>
-    <tr><td>Exact alarms</td><td>To ring time alarms at the exact time you set.</td></tr>
-    <tr><td>Foreground service, wake lock, full-screen intent, turn screen on, disable keyguard</td><td>To keep the alarm running reliably and show it on the lock screen.</td></tr>
-    <tr><td>Receive boot completed</td><td>To restore your alarms after the device restarts.</td></tr>
-    <tr><td>Ignore battery optimisations</td><td>So the system does not delay or stop alarms in the background (asked only with your approval).</td></tr>
-    <tr><td>Vibrate</td><td>To vibrate when an alarm rings.</td></tr>
-    <tr><td>Internet &amp; network state</td><td>To load ads and to communicate with Google Play for purchases.</td></tr>
-  </table>
-</section>
-
-<section>
-  <h2>5. Sharing of information</h2>
-  <p>We do not sell your personal information. Information is shared only with the service providers described above
-  (Google AdMob and Google Play), which process it under their own privacy policies.</p>
-</section>
-
-<section>
-  <h2>6. Data retention and deletion</h2>
-  <p>Your alarms and settings remain on your device until you delete them or uninstall the app; uninstalling removes all
-  app data stored on the device. Data held by Google (for example, advertising data or purchase records) is governed by
-  Google's policies and your Google Account settings. If you sent us an email, we keep it only as long as needed to
-  respond to you, and you can ask us to delete it.</p>
-</section>
-
-<section>
-  <h2>7. Security</h2>
-  <p>We take reasonable steps to protect the information the app stores, including encrypting the VIP purchase token
-  with the Android Keystore. No method of storage or transmission is completely secure, so we cannot guarantee absolute
-  security.</p>
-</section>
-
-<section>
-  <h2>8. Children's privacy</h2>
-  <p>The app is not directed at children under 13 (or the minimum age required in your country). We do not knowingly
-  collect personal information from children. If you believe a child has provided information to us, contact us and we
-  will delete it.</p>
-</section>
-
-<section>
-  <h2>9. Your choices and rights</h2>
-  <ul>
-    <li>Change or withdraw ads consent from <em>Privacy settings</em> in the app (where available).</li>
-    <li>Reset or delete your advertising ID in your Android settings.</li>
-    <li>Depending on where you live (for example the EEA, UK or California), you may have rights to access, correct or
-    delete personal data and to object to certain processing. Because we do not collect personal data ourselves, requests
-    about advertising data should be directed to Google; for anything else, contact us below.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>10. Changes to this policy</h2>
-  <p>We may update this policy from time to time. The latest version is always on this page, with the "Last updated"
-  date at the top. Continued use of the app after a change means you accept the updated policy.</p>
-</section>
-
-<section>
-  <h2>11. Contact us</h2>
-  <p>Questions about this policy? Email us at <a href="mailto:supportoflifestyle@gmail.com">supportoflifestyle@gmail.com</a>.</p>
-</section>
-
-</main>
-
-<footer class="muted">&copy; 2026 Developer</footer>
-
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="terms.html">Terms &amp; Conditions &rarr;</a>
+  </div>
+</footer>
 </body>
 </html>
